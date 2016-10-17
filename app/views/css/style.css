@@ -1,0 +1,13 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: #04775e;
+	font-weight: 300;
+}
+
+hr {
+	height: 1px;
+	background-color: #bcbbbb;
+	border: none;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}

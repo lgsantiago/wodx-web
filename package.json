@@ -1,0 +1,34 @@
+{
+  "name": "wodx-web",
+  "version": "1.0.0",
+  "description": "Wodx web application. Calls wodx api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lgsantiago/wodx-web.git"
+  },
+  "keywords": [
+    "wod",
+    "fitness",
+    "health",
+    "fit",
+    "wodx"
+  ],
+  "author": "Luis Santiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgsantiago/wodx-web/issues"
+  },
+  "homepage": "https://github.com/lgsantiago/wodx-web",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1",
+    "sprintf-js": "^1.0.3"
+  }
+}
