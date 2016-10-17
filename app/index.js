@@ -28,8 +28,9 @@ app.get('/', (req, res) => {
   })
     .then((data) => {
       var wod = formatter.formatResponse(data);
-      res.render('wod', {name: wod
-      })
+      res.render('wod', {name: wod,
+        video: "TEST TEST"
+      }) 
     })
     .catch((err) => {
       console.log(err)

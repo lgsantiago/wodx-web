@@ -8,7 +8,7 @@ function formatResponse(data){
 		set += data.reps[i]+' '+data.movements[i] + '<br>';
 	}
 	console.log(set);
-	wod = vsprintf("<b>%s Rounds:</b> <br><br> %s ", [data.rounds, set]);
+	wod = vsprintf("<b>%s Rounds:</b> <br> %s ", [data.rounds, set]);
 	return wod;
 }
 module.exports.formatResponse = formatResponse;
