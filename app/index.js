@@ -27,6 +27,14 @@ app.get('/', (req, res) => {
     json: true
   })
     .then((data) => {
+      // request({
+      //   uri: 'https://api.instagram.com/v1/tags/pushups/media/recent?count=30&client_id=93daf7f27158410b8a8991ab0d8689c0',
+      //   json: true
+      // })
+      // .then((videos_data)=>{
+      //   console.log(videos_data);
+      // })
+
       var wod = formatter.formatResponse(data);
       res.render('wod', {name: wod,
         video: "TEST TEST"
