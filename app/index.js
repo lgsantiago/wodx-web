@@ -34,10 +34,11 @@ app.get('/', (req, res) => {
       // .then((videos_data)=>{
       //   console.log(videos_data);
       // })
-
+      //TODO: send videos_data to getVideoSource() function
+      var video_sources = ['<source name="video" src="https://scontent-ord1-1.cdninstagram.com/t50.2886-16/14335548_1051193988330176_850900594_n.mp4" type="video/mp4">']
       var wod = formatter.formatResponse(data);
       res.render('wod', {name: wod,
-        video: "TEST TEST"
+        source: video_sources[0]
       }) 
     })
     .catch((err) => {
