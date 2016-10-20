@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
       '<source name="video" src="https://scontent-ord1-1.cdninstagram.com/t50.2886-16/14793103_1704712819850274_7538965195704500224_n.mp4" type="video/mp4>'
       ]
       var wod = formatter.formatResponse(data);
-      res.render('wod', {name: wod,
+      res.render('wod', {wod: wod,
         source: video_sources[0]
       }) 
     })
