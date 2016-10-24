@@ -2,7 +2,6 @@ const path = require('path')
 const express = require('express') 
 const exphbs = require('express-handlebars')
 const request = require('request-promise')
-//const layout = require('./config/views-config')
 const app = express()  
 const port = Number(process.env.PORT || 3000);
 const formatter = require('./helpers/requestFormatter') 
@@ -27,14 +26,7 @@ app.get('/', (req, res) => {
     json: true
   })
     .then((data) => {
-      // TODO: Request to sound cloud
-      // request({
-      //   uri: '',
-      //   json: true
-      // })
-      // .then((videos_data)=>{
-      //   console.log(videos_data);
-      // })
+      // TODO: Request to Spotify
       var video_sources = ['<source name="video" src="https://scontent-ord1-1.cdninstagram.com/t50.2886-16/14335548_1051193988330176_850900594_n.mp4" type="video/mp4">',]
       var wod = formatter.formatResponse(data);
       res.render('wod', {wod: wod,
