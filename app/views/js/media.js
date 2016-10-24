@@ -27,6 +27,6 @@ function renderVideos() {
 
         index++;
 
-	}, 10*1000);
+	}, 21*1000);
 
 }
